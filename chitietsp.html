@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Mua Hàng</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 70px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-menu li {
+            margin-right: 30px;
+        }
+
+        .nav-menu li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-menu li a:hover {
+            color: #f44336;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 40px;
+            gap: 20px;
+        }
+
+        .product-image {
+            flex: 1 1 40%;
+            padding: 20px;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .image-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .product-info {
+            flex: 1 1 50%;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-info h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .product-info p {
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #f44336;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .quantity-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .quantity-container input {
+            width: 60px;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+
+        .nutmuahang {
+            background-color: #007BFF;
+            padding: 15px 40px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .nutmuahang:hover {
+            background-color: #89d6ff;
+        }
+
+        .footer {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 40px;
+        }
+
+        .footer img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="ảnh/LOGO.png" alt="ORENT Logo">
+        <ul class="nav-menu">
+            <li><a href="trangchu.html">Trang chủ </a></li>
+                <li><a href="chitiet5.html">Phòng trọ </a></li>
+                <li><a href="chitiet5.html">Căn hộ, chung cư </a></li>
+                <li><a href="chitiet5.html">Văn phòng </a></li>
+                <li><a href="chitiet5.html">Cửa hàng </a></li>
+                <li><a href="chitiet5.html">Biệt thự </a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="product-image">
+            <img src="ảnh/20241123105732-8590_wm.jpg" alt="ORENT" id="product-image">
+            <div class="image-buttons">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Dự Án Lumiere Riverside, Đường Xa Lộ Hà Nội, Phường An Phú, Quận 2, Hồ Chí Minh</h1>
+            <p class="product-price">Giá: 46,500,000 đ/Tháng</p>
+            <p><a class="nutmuahang" href="muahang.html">Liên hệ</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact-info">
+            <img src="ảnh/LOGO.png" alt="ORENT Logo">
+            <p><strong>CÔNG TY TNHH ORENT VIỆT NAM</strong></p>
+            <p>Địa chỉ: Tầng 26, Tòa nhà CII Tower, số 26 Bình Lợi, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p>Điện thoại: (028) 39309168</p>
+            <p>Tổng đài: 1900-1533</p>
+            <p>Mã số thuế: 0303883266</p>
+            <p>Ngày cấp: 15/07/2008 – Nơi cấp: Cục Thuế Hồ Chí Minh</p>
+            <p>Hộp thư góp ý: otvnfeedback@orent.com.vn</p>
+        </div>
+    </div>
+
+    <script>
+        const images = [
+            "ảnh/20241123105732-8590_wm.jpg", 
+            "ảnh/20240508132329-febd_wm.jpg", 
+            "ảnh/20231118091401-1127_wm.jpg"
+        ];
+        
+        let currentIndex = 0;
+        
+        function changeImage(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            document.getElementById("product-image").src = images[currentIndex];
+        }
+    </script>
+</body>
+</html>

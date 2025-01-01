@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang phụ </title>
+    <style>
+.container {
+      display: flex;
+      justify-content: space-between; /* Khoảng cách đều giữa các khung */
+      flex-wrap: wrap; /* Đảm bảo khung tự xuống dòng khi không đủ không gian */
+      gap: 20px; /* Khoảng cách giữa các khung */
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 30%; /* Chia đều 3 khung */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+      line-height: 1.4em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+      -webkit-box-orient: vertical;
+    }
+    .card-price {
+      color: #d9534f;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .card-size {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .card-location {
+      font-size: 14px;
+      color: #777;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .card-location svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+      fill: #777;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #999;
+      padding: 10px 15px;
+      border-top: 1px solid #eee;
+    }
+    .contact-button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .contact-button:hover {
+      background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="ảnh/20211018155335-5496_wm.jpeg" alt="Example Image">
+              <div class="card-content">
+                <div class="card-title">Nhà Trần Khát Chân - Lò Đức - Kim Ngưu, gần ô tô, diện tích...</div>
+                <div class="card-price">8,85 tỷ</div>
+                <div class="card-size">65 m²</div>
+                <div class="card-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                  </svg>
+                  Hai Bà Trưng, Hà Nội
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Đăng hôm nay</span>
+                <a href="#" class="contact-button">Liên hệ</a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="ảnh/20220623081854-04c3_wm.jpg" alt="Example Image">
+              <div class="card-content">
+                <div class="card-title">Bán CH Q7 SG Riverside Complex - view sông - cam kết giá rẻ nhất</div>
+                <div class="card-price">5,50 tỷ</div>
+                <div class="card-size">80 m²</div>
+                <div class="card-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                  </svg>
+                  Dự án Q7 Saigon Riverside, Đường Đào Trí, Phường Phú Thuận, Quận 7, Hồ Chí Minh
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Đăng hôm qua</span>
+                <a href="#" class="contact-button">Liên hệ</a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="ảnh/20220623081854-98e4_wm.jpg" alt="Example Image">
+              <div class="card-content">
+                <div class="card-title">Căn hộ cao cấp Diamond Celadon City</div>
+                <div class="card-price">4,90 tỷ</div>
+                <div class="card-size">50 m²</div>
+                <div class="card-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                  </svg>
+                  Dự án Celadon City, Đường N1, Phường Sơn Kỳ, Tân Phú, Hồ Chí Minh
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Đăng 2 ngày trước</span>
+                <a href="#" class="contact-button">Liên hệ</a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="ảnh/20231118091401-1127_wm.jpg" alt="Example Image">
+              <div class="card-content">
+                <div class="card-title">Nhà Trần Khát Chân - Lò Đức - Kim Ngưu, gần ô tô, diện tích...</div>
+                <div class="card-price">8,85 tỷ</div>
+                <div class="card-size">65 m²</div>
+                <div class="card-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                  </svg>
+                  Hai Bà Trưng, Hà Nội
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Đăng hôm nay</span>
+                <a href="#" class="contact-button">Liên hệ</a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="ảnh/20240508132329-febd_wm.jpg" alt="Example Image">
+              <div class="card-content">
+                <div class="card-title">Bán căn hộ dịch vụ Thảo Điền tặng full nội thất mới 100%, kinh doanh sinh lời 160tr/tháng</div>
+                <div class="card-price">57,50 tỷ</div>
+                <div class="card-size">180 m²</div>
+                <div class="card-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                  </svg>
+                  Phường Thảo Điền, Quận 2, Hồ Chí Minh
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Đăng hôm qua</span>
+                <a href="#" class="contact-button">Liên hệ</a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="ảnh/20240914090738-0463_wm.jpg" alt="Example Image">
+              <div class="card-content">
+                <div class="card-title">CĂN HỘ The Beverly Solari </div>
+                <div class="card-price">2,90 tỷ</div>
+                <div class="card-size">59 m²</div>
+                <div class="card-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                  </svg>
+                  Dự án Vinhomes Grand Park, Phường Long Thạnh Mỹ, Quận 9, Hồ Chí Minh
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>Đăng 5 ngày trước</span>
+                <a href="#" class="contact-button">Liên hệ</a>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="ảnh/20241106081616-088e_wm.jpg" alt="Example Image">
+            <div class="card-content">
+              <div class="card-title">The Opus One - Vinhomes Grand Park</div>
+              <div class="card-price">9,85 tỷ</div>
+              <div class="card-size">65 m²</div>
+              <div class="card-location">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                </svg>
+                Khu đô thị Vinhomes Grand Park, Đường Nguyễn Xiển, Phường Long Thạnh Mỹ, Quận 9, Hồ Chí Minh.
+              </div>
+            </div>
+            <div class="card-footer">
+              <span>Đăng hôm nay</span>
+              <a href="#" class="contact-button">Liên hệ</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="ảnh/20241112155522-7be1_wm.jpg" alt="Example Image">
+            <div class="card-content">
+              <div class="card-title">Nhà phố đẹp, tiện nghi, gần trung tâm...</div>
+              <div class="card-price">8,50 tỷ</div>
+              <div class="card-size">80 m²</div>
+              <div class="card-location">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                </svg>
+                Phường Tây Tựu, Quận Bắc Từ Liêm, Hà Nội.
+              </div>
+            </div>
+            <div class="card-footer">
+              <span>Đăng một tuân trước </span>
+              <a href="#" class="contact-button">Liên hệ</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="ảnh/20241123105732-8590_wm.jpg" alt="Example Image">
+            <div class="card-content">
+              <div class="card-title">Căn hộ cao cấp Lumiere Riverside 2PN, giá ưu đãi...</div>
+              <div class="card-price">8,90 tỷ</div>
+              <div class="card-size">70 m²</div>
+              <div class="card-location">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                </svg>
+                Dự án Lumiere Riverside, Đường Xa Lộ Hà Nội, Phường An Phú, Quận 2, Hồ Chí Minh
+              </div>
+            </div>
+            <div class="card-footer">
+              <span>Đăng 3 ngày trước</span>
+              <a href="#" class="contact-button">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>
